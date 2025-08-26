@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculadora</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="calculadora.css"/>
+  </head>
+  <body>
+
+    <div class="calculadora">
+        <input type="text" class="tela" id="tela" readonly>
+        <div class="buttons">
+            <button onclick="mostrarNaTela(7)">7</button>
+            <button onclick="mostrarNaTela(8)">8</button>
+            <button onclick="mostrarNaTela(9)">9</button>
+            <button onclick="definirOpcao(4)">/</button>
+            <button onclick="mostrarNaTela(4)">4</button>
+            <button onclick="mostrarNaTela(5)">5</button>
+            <button onclick="mostrarNaTela(6)">6</button>
+            <button onclick="definirOpcao(3)">x</button>
+            <button onclick="mostrarNaTela(1)">1</button>
+            <button onclick="mostrarNaTela(2)">2</button>
+            <button onclick="mostrarNaTela(3)">3</button>
+            <button onclick="definirOpcao(2)">-</button>
+            <button onclick="limparTela()">C</button>
+            <button onclick="mostrarNaTela(0)">0</button>
+            <button onclick="definirOpcao(1)">+</button>
+            <button onclick="fazerOperacao()">=</button>
+        </div>
+    </div>
+
+    <script src="calculadora.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  </body>
+</html>
